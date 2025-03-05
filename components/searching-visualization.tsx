@@ -67,6 +67,7 @@ const SearchingVisualization: React.FC<SearchingVisualizationProps> = ({ type })
   }
 
   const binarySearch = async () => {
+    if (searchValue === null) return
     setFound(null)
     let left = 0
     let right = array.length - 1
